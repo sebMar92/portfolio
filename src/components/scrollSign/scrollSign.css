@@ -1,0 +1,15 @@
+.sign-container {
+  position: absolute;
+  top: 88vh;
+  right: 5vw;
+  opacity: 1;
+  transition: all 1s;
+}
+.vanish {
+  opacity: 0;
+}
+@media (max-width: 1024px) {
+  .sign-container {
+    top: 92vh;
+  }
+}
