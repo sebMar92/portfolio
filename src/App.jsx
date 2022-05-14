@@ -5,9 +5,9 @@ import './App.css';
 function App() {
   return (
     <div id="app">
-      <h1 className="tags">{'<html>'}</h1>
+      <h2 className="tags">{'<html>'}</h2>
       <div className="indent">
-        <h1 className="tags">{'<body>'}</h1>
+        <h2 className="tags">{'<body>'}</h2>
         <div className="indent">
           <div id="nav-spacer">
             <Router>
@@ -24,9 +24,9 @@ function App() {
             </Router>
           </div>
         </div>
-        <h1 className="tags">{'</body>'}</h1>
+        <h2 className="tags">{'</body>'}</h2>
       </div>
-      <h1 className="tags">{'</html>'}</h1>
+      <h2 className="tags">{'</html>'}</h2>
     </div>
   );
 }
