@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: rgb(37, 57, 87);
+  background-color: rgb(78, 110, 145);
+  color: rgb(31, 33, 43);
   font-family: 'Roboto Mono', monospace;
   font-weight: 800;
   font-size: large;
@@ -11,11 +12,30 @@ body {
 .header {
   margin: 1vw;
 }
+
 .tags {
   font-family: 'Reenie Beanie', cursive;
   font-weight: 100;
-  color: rgb(241, 198, 56);
+  color: rgb(234, 208, 50);
 }
 .indent {
   margin-left: 2vw;
+}
+@media (max-width: 1024px) {
+  .tags {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 100;
+    color: rgb(234, 208, 50);
+    font-size: 20px;
+  }
+  .header {
+    margin: 1px 10px 1px 10px;
+    padding: 0px;
+  }
+  .indent {
+    margin-left: 20px;
+  }
+  #nav-spacer {
+    margin-left: 5px;
+  }
 }

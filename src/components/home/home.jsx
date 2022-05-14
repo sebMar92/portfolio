@@ -49,10 +49,10 @@ export default function Home() {
         goToContact={goToContact}
         language={language}
       />
-      <Selector language={language} setLanguage={setLanguage} id="language-selector" />
+      <Selector language={language} setLanguage={setLanguage} />
       <Header
         tag="h1"
-        title={language ? "Hi, I'm Sebastián Martínez." : 'Hola, soy Sebastián Martínez.'}
+        title={language ? `Hi, I'm Sebastián Martínez.` : 'Hola, soy Sebastián Martínez.'}
         ref={aboutMe}
       />
       <Header
@@ -65,12 +65,13 @@ export default function Home() {
       <div>
         {language ? (
           <p>
-            I have worked for years in an environment where respect and meeting deadlines
-            are essential, so I thrive working in a team and I am used to working under
-            time pressure. I personally enjoy learning new things and working hard to
-            solve logical problems. I see every challenge as an opportunity to grow.
-            <br />I have training in JavaScript, Node, Express, React, Redux, HTML5, CSS3,
-            SQL and PostgreSQL.
+            I have worked for years in an environment where respecting each other and
+            meeting deadlines are essential, so I thrive working in a team and I am used
+            to working under time pressure. I personally enjoy learning new things and
+            working hard to solve logical problems. I see every challenge as an
+            opportunity to grow.
+            <br /> <br />I have training in JavaScript, Node, Express, React, Redux,
+            HTML5, CSS3, Sequelize and PostgreSQL.
           </p>
         ) : (
           <p>
@@ -79,36 +80,93 @@ export default function Home() {
             trabajar bajo la presión del tiempo. Personalmente disfruto de aprender cosas
             nuevas y trabajar duro para resolver problemas lógicos. Veo cada desafío como
             una oportunidad para crecer.
-            <br />
+            <br /> <br />
             Tengo conocimientos de JavaScript, Node, Express, React, Redux, HTML5, CSS3,
-            SQL y PostgreSQL.
+            Sequelize y PostgreSQL.
           </p>
         )}
       </div>
       <h2 className="tags">{'</p>'}</h2>
-
+      <hr />
       <Header tag="h1" title={language ? 'Projects' : 'Proyectos'} ref={projects} />
-      <Slider
-        screenImg="/images/dogsgif.gif"
-        title="Dogs App"
-        ref={dogs}
-        description="Designed and developed a web page that recieves data from an external API and has it's own database. It displays a list of dog breeds with their information, it allows the creation of new breeds in the database, as well as their filtering and ordering."
-      />
       <Slider
         screenImg="/images/techgif.gif"
         celImg="/images/celtechgif.gif"
         title="TechStore"
         ref={tech}
-        description="Designed and developed a web page that recieves data from an external API and has it's own database. It displays a list of dog breeds with their information, it allows the creation of new breeds in the database, as well as their filtering and ordering."
+        description={
+          language
+            ? 'TechStore is an e-commerce carried out in a group, under the SCRUM work methodology. In addition to the essential functions for searching and buying products, both users with and without a registered account can use the shopping cart and wishlist, it has its own login system and an extensive administration panel. It has integration with Google Auth as a sign up / log in alternative and with MercadoPago to handle payments. The main technologies used were Javascript, Node, Express, React, Redux and TailwindCSS'
+            : 'TechStore es un e-commerce realizado en grupo, bajo la metodología de trabajo SCRUM. Además de las funciones escenciales para la búsqueda y compra de productos, tanto usuarios con y sin cuenta pueden utilizar el carro de compra y lista de favoritos, tiene un sistema propio de registro de cuentas y un extenso panel de administración. Cuenta con integración con Google Auth como alternativa de registro y con MercadoPago para manejar los pagos. Las tecnologías principales utilizadas fueron Javascript, Node, Express, React, Redux y TailwindCSS'
+        }
       />
+      <hr className="short-line" />
+      <Slider
+        screenImg="/images/dogsgif.gif"
+        title="Dogs App"
+        ref={dogs}
+        description={
+          language
+            ? 'Dogs App is a SPA that receives information from an external API and displays it as a catalog. It also has its own database for the creation of dog breeds by users, and allows their filtering and ordering. Javascript, Node, Express, React, Redux and CSS were used to make it'
+            : 'Dogs App es una aplicación de página única que recibe información de razas de perros desde una API externa y la exhibe en modo de catálogo. Tiene también una base de datos propia para la creación de razas por usuarios, y un sistema combinable de filtros y ordenamientos. Se utilizó Javascript, Node, Express, React, Redux y CSS para su creación'
+        }
+      />
+      <hr className="short-line" />
       <Slider
         screenImg="/images/scrapgif.gif"
         title="WebScrap Api"
         ref={scrap}
-        description="Designed and developed a web page that recieves data from an external API and has it's own database. It displays a list of dog breeds with their information, it allows the creation of new breeds in the database, as well as their filtering and ordering."
+        description={
+          language
+            ? 'This project consists of a small single-endpoint API that takes payroll information from the Chilean Internal Revenue Service page, and returns it in json format conveniently arranged. It was created using Javascript, Express and Puppeteer'
+            : 'Este proyecto consiste en una pequeña API de un solo endpoint que toma la información de una nómina de la página del Servicio de Impuestos Internos de Chile, y la devuelve en formato json ordenada de forma conveniente. Fue creada usando Javascript, Express y Puppeteer'
+        }
       />
-
+      <hr />
       <Header tag="h1" title={language ? 'Contact me' : 'Contáctame'} ref={contact} />
+      <div id="contact-container">
+        <h2 className="tags">{'<p>'}</h2>
+        {language ? (
+          <p>
+            I'm currently open to work, and there's nothing in web development I don't
+            enjoy doing, so I'm interested both in Back End and Front End job positions.
+            <br />
+            <br />
+            If you want to know more about me, or want to reach me about an open position,
+            don't hesitate to contact me through any of these options!
+          </p>
+        ) : (
+          <p>
+            Actualmente estoy abierto a trabajar, y no hay nada en el desarrollo web que
+            no disfrute, por lo que estoy interesado en puestos de trabajo de Back End y
+            Front End.
+            <br />
+            <br />
+            Si deseas saber más sobre mí, o querés comunicarte conmigo sobre un puesto
+            vacante, no dudes en contactarme a través de cualquiera de estas opciones!
+          </p>
+        )}
+        <h2 className="tags">{'</p>'}</h2>
+        <div id="icons-container">
+          <a
+            href="https://www.linkedin.com/in/sebastian-martinez-developer/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="icon"
+              src="/images/linkedinicon-200.png"
+              alt="linkedin button"
+            />
+          </a>
+          <a href="https://github.com/sebMar92" target="_blank" rel="noreferrer">
+            <img className="icon" src="/images/githubicon-200.png" alt="github button" />
+          </a>
+          <a href="mailto:sebmar92@gmail.com" target="_blank" rel="noreferrer">
+            <img className="icon" src="/images/gmailicon-200.png" alt="gmail button" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

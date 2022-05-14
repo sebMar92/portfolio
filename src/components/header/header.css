@@ -1,5 +1,14 @@
 .h1-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 80vw;
+}
+
+@media (max-width: 1024px) {
+  .h1-container {
+    width: 85vw;
+  }
+  .header {
+    font-size: 22px;
+  }
 }

@@ -6,3 +6,23 @@
 #home-wrapper {
   margin-right: 5vw;
 }
+hr {
+  border-color: rgb(234, 208, 50);
+  margin: 15vh 0px 15vh 0px;
+}
+.short-line {
+  width: 50vw;
+  margin: auto;
+}
+#icons-container {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: block;
+}
+@media (max-width: 1024px) {
+  #icons-container {
+    transform: scale(50%);
+  }
+}

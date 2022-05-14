@@ -20,18 +20,6 @@ function App() {
                     </>
                   }
                 />
-                {/* <Route
-            path="/home"
-            element={
-              <>
-                <div className="stick">
-                  <NavBar />
-                  <Filter />
-                </div>
-                <Home />
-              </>
-            }
-          /> */}
               </Routes>
             </Router>
           </div>

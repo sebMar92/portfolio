@@ -30,7 +30,7 @@ const Slider = forwardRef(({ screenImg, title, description, celImg }, ref) => {
           {description.split('. ').map((line) => {
             return (
               <p>
-                {line}
+                {line}.
                 <br />
               </p>
             );

@@ -18,11 +18,11 @@ export default function Navbar({
       <h4 className="hoverable" onClick={goToProjects}>
         {language ? 'Projects' : 'Proyectos'}
       </h4>
-      <h5 className="hoverable" onClick={goToDogs}>
-        Dogs App
-      </h5>
       <h5 className="hoverable" onClick={goToTech}>
         TechStore
+      </h5>
+      <h5 className="hoverable" onClick={goToDogs}>
+        Dogs App
       </h5>
       <h5 className="hoverable" onClick={goToScrap}>
         WebScrap Api

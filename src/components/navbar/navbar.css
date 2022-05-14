@@ -3,11 +3,12 @@
   left: 0;
   top: auto;
   width: 100px;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(241, 198, 56);
+  background-color: rgb(234, 208, 50);
+  border-color: rgb(31, 33, 43);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 1vh 1vh 1vh 0.5vh;
@@ -16,6 +17,7 @@
   transition-duration: 250ms;
   transform: translateX(-79%);
   user-select: none;
+  z-index: 1;
 }
 h4,
 h5 {
@@ -37,4 +39,26 @@ h5 {
 .hoverable:hover {
   transform: scale(100%);
   text-shadow: 0 0 15px rgb(104, 87, 12);
+}
+@media (max-width: 1024px) {
+  .navbar-container {
+    position: fixed;
+    left: 0;
+    top: 10vh;
+    width: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(234, 208, 50);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1vh 1vh 1vh 0.5vh;
+    border-style: solid;
+    border-width: 3px 3px 3px 0px;
+    transition-duration: 250ms;
+    transform: translateX(-79%);
+    user-select: none;
+    z-index: 1;
+  }
 }
