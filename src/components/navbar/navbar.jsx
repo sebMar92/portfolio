@@ -11,7 +11,7 @@ export default function Navbar({
   language,
 }) {
   return (
-    <div className="navbar-container">
+    <div id="navbar-container">
       <h4 className="hoverable" onClick={goToAbout}>
         {language ? 'About me' : 'Sobre mi'}
       </h4>

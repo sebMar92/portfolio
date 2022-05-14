@@ -21,7 +21,7 @@ const Slider = forwardRef(({ screenImg, title, description, url, celImg }, ref) 
     }
   };
   return (
-    <div ref={ref}>
+    <div ref={ref} id="outter-slider-wrapper">
       <div ref={slide} className={`slider-wrapper`}>
         <div className="text-container">
           <a href={url} target="_blank" rel="noreferrer">
