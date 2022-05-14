@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import Header from '../header/header.jsx';
 import './slider.css';
 
-const Slider = forwardRef(({ screenImg, title, description, celImg }, ref) => {
+const Slider = forwardRef(({ screenImg, title, description, url, celImg }, ref) => {
   const [active, setActive] = useState(false);
   const slide = useRef(null);
   useEffect(() => {
@@ -24,7 +24,9 @@ const Slider = forwardRef(({ screenImg, title, description, celImg }, ref) => {
     <div ref={ref}>
       <div ref={slide} className={`slider-wrapper`}>
         <div className="text-container">
-          <Header tag="h2" title={title} classes="handwritten" />
+          <a href={url} target="_blank" rel="noreferrer">
+            <Header tag="h2" title={title} classes="handwritten" />
+          </a>
           <h2 className="tags">{'<p>'}</h2>
 
           {description.split('. ').map((line) => {
@@ -38,18 +40,20 @@ const Slider = forwardRef(({ screenImg, title, description, celImg }, ref) => {
           <h2 className="tags">{'</p>'}</h2>
         </div>
         <div className={`moving-part ${active ? 'active' : 'inactive'}`}>
-          <h2 className="tags">{'<img>'}</h2>
-          <div className="screen-container">
-            <img src={screenImg} className="content" alt="project-preview" />
-            {celImg && (
-              <img
-                src={celImg}
-                className="cellphone"
-                alt="project-on-cellphone-preview"
-              />
-            )}
-            <h2 className="tags">{'</img>'}</h2>
-          </div>
+          <a href={url} target="_blank" rel="noreferrer">
+            <h2 className="tags">{'<img>'}</h2>
+            <div className="screen-container">
+              <img src={screenImg} className="content" alt="project-preview" />
+              {celImg && (
+                <img
+                  src={celImg}
+                  className="cellphone"
+                  alt="project-on-cellphone-preview"
+                />
+              )}
+              <h2 className="tags">{'</img>'}</h2>
+            </div>
+          </a>
         </div>
       </div>
     </div>

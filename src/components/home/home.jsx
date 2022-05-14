@@ -94,6 +94,7 @@ export default function Home() {
         celImg="/images/celtechgif.gif"
         title="TechStore"
         ref={tech}
+        url="https://tech-store-prod.vercel.app/"
         description={
           language
             ? 'TechStore is an e-commerce carried out in a group, under the SCRUM work methodology. In addition to the essential functions for searching and buying products, both users with and without a registered account can use the shopping cart and wishlist, it has its own login system and an extensive administration panel. It has integration with Google Auth as a sign up / log in alternative and with MercadoPago to handle payments. The main technologies used were Javascript, Node, Express, React, Redux and TailwindCSS'
@@ -105,6 +106,7 @@ export default function Home() {
         screenImg="/images/dogsgif.gif"
         title="Dogs App"
         ref={dogs}
+        url="https://dogs-app-pi.vercel.app/"
         description={
           language
             ? 'Dogs App is a SPA that receives information from an external API and displays it as a catalog. It also has its own database for the creation of dog breeds by users, and allows their filtering and ordering. Javascript, Node, Express, React, Redux and CSS were used to make it'
@@ -116,6 +118,7 @@ export default function Home() {
         screenImg="/images/scrapgif.gif"
         title="WebScrap Api"
         ref={scrap}
+        url="https://github.com/sebMar92/web-scrap-api"
         description={
           language
             ? 'This project consists of a small single-endpoint API that takes payroll information from the Chilean Internal Revenue Service page, and returns it in json format conveniently arranged. It was created using Javascript, Express and Puppeteer'
