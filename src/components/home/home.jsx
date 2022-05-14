@@ -6,7 +6,7 @@ import Selector from '../selector/selector.jsx';
 import './home.css';
 
 export default function Home() {
-  const [language, setLanguage] = useState(false);
+  const [language, setLanguage] = useState(true);
   const aboutMe = useRef(null);
   const goToAbout = () =>
     aboutMe.current.scrollIntoView({

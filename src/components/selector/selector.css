@@ -7,7 +7,7 @@
   user-select: none;
 }
 .option {
-  border: 1px solid rgb(82, 70, 28);
+  border: 1px solid rgb(31, 33, 43);
   padding: 2px 6px 2px 6px;
   background-color: rgb(234, 208, 50);
 }
@@ -17,11 +17,11 @@
   border: 1px solid rgb(255, 255, 255);
 }
 .unselected {
-  color: rgb(66, 66, 66);
+  color: rgb(31, 33, 43);
 }
 .unselected:hover {
   color: rgb(0, 0, 0);
-  transform: scale(102%);
+  transform: scale(104%);
 }
 @media (max-width: 1024px) {
   #selector-container {
