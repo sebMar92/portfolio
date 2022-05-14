@@ -135,7 +135,7 @@ export default function Home() {
             enjoy doing, so I'm interested both in Back End and Front End job positions.
             <br />
             <br />
-            If you want to know more about me, or want to reach me about an open position,
+            If you wish to know more about me, or want to reach me about an open position,
             don't hesitate to contact me through any of these options!
           </p>
         ) : (
