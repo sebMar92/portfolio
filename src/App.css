@@ -3,6 +3,8 @@
 }
 
 body {
+  background-image: url('/public/images/blueorigami.png');
+  background-repeat: repeat;
   background-color: rgb(78, 110, 145);
   color: rgb(31, 33, 43);
   font-family: 'Roboto Mono', monospace;

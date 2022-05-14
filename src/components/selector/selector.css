@@ -4,6 +4,7 @@
   position: absolute;
   top: 1vh;
   right: 1vw;
+  user-select: none;
 }
 .option {
   border: 1px solid rgb(82, 70, 28);
