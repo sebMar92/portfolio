@@ -28,6 +28,11 @@ export default function Home() {
     tech.current.scrollIntoView({
       behavior: 'smooth',
     });
+  const tddtdl = useRef(null);
+  const goToTdd = () =>
+    tddtdl.current.scrollIntoView({
+      behavior: 'smooth',
+    });
   const scrap = useRef(null);
   const goToScrap = () =>
     scrap.current.scrollIntoView({
@@ -45,6 +50,7 @@ export default function Home() {
         goToAbout={goToAbout}
         goToProjects={goToProjects}
         goToDogs={goToDogs}
+        goToTdd={goToTdd}
         goToTech={goToTech}
         goToScrap={goToScrap}
         goToContact={goToContact}
@@ -82,8 +88,8 @@ export default function Home() {
                 problems. I see every challenge as an opportunity to grow.
                 <br /> <br />I have training in{' '}
                 <span className="bold">
-                  JavaScript, Node, Express, React, Redux, HTML5, CSS3, Sequelize and
-                  PostgreSQL
+                  JavaScript, Node, Express, React, Redux, HTML5, CSS3, Sequelize,
+                  PostgreSQL and Jest
                 </span>
                 .
               </p>
@@ -100,10 +106,12 @@ export default function Home() {
                 resolver problemas lógicos. Veo cada desafío como una oportunidad para
                 crecer.
                 <br /> <br />
+                Tengo conocimientos de{' '}
                 <span className="bold">
-                  Tengo conocimientos de JavaScript, Node, Express, React, Redux, HTML5,
-                  CSS3, Sequelize y PostgreSQL.
+                  JavaScript, Node, Express, React, Redux, HTML5, CSS3, Sequelize,
+                  PostgreSQL y Jest
                 </span>
+                .
               </p>
             )}
           </div>
@@ -115,8 +123,21 @@ export default function Home() {
 
       <section>
         <h2 className="tags">{'<section>'}</h2>
+
         <div className="indent">
           <Header tag="h1" title={language ? 'Projects' : 'Proyectos'} ref={projects} />
+          <Slider
+            screenImg="/images/tddgif.gif"
+            title="ToDoList.tdd"
+            ref={tddtdl}
+            url="https://tdd-tdl.vercel.app/"
+            description={
+              language
+                ? `ToDoList.tdd is the first app I created using Test Driven Development (TDD). For this, I designed unit and integration tests for both the backend and the frontend, and then wrote the code that passes those tests. Since the goal of the project was to learn how to use testing libraries, the visual design is simple and inspired by the terminal interface. The main library used to create the tests is Jest`
+                : 'ToDoList.tdd es mi primer aplicación creada utilizando la metodología de trabajo de desarrollo dirigido por tests (TDD en inglés). Para ello diseñé tests unitarios y de integración tanto para el backend como el frontend, para luego escribir el código que pase esos tests. Dado que el objetivo del proyecto fue aprender a usar librerías de testing, el diseño es sencillo e inspirado en la interface de la terminal. La librería principal utilizada para crear los tests es Jest'
+            }
+          />
+          <hr className="short-line" />
           <Slider
             screenImg="/images/techgif.gif"
             celImg="/images/celtechgif.gif"

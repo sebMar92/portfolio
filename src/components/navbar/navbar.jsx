@@ -8,6 +8,7 @@ export default function Navbar({
   goToTech,
   goToScrap,
   goToContact,
+  goToTdd,
   language,
 }) {
   return (
@@ -18,6 +19,9 @@ export default function Navbar({
       <h4 className="hoverable" onClick={goToProjects}>
         {language ? 'Projects' : 'Proyectos'}
       </h4>
+      <h5 className="hoverable" onClick={goToTdd}>
+        ToDoList.tdd
+      </h5>
       <h5 className="hoverable" onClick={goToTech}>
         TechStore
       </h5>
