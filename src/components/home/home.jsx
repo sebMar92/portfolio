@@ -88,8 +88,7 @@ export default function Home() {
                 problems. I see every challenge as an opportunity to grow.
                 <br /> <br />I have training in{' '}
                 <span className="bold">
-                  JavaScript, Node, Express, React, Redux, HTML5, CSS3, Sequelize,
-                  PostgreSQL and Jest
+                Javascript, Typescript, Node.js, Express.js, Sequelize, Apollo GraphQL, PostgreSQL, React, Redux, Next.js, HTML5, CSS3, Styled Components, TailwindCSS and Jest
                 </span>
                 .
               </p>
@@ -108,8 +107,7 @@ export default function Home() {
                 <br /> <br />
                 Tengo conocimientos de{' '}
                 <span className="bold">
-                  JavaScript, Node, Express, React, Redux, HTML5, CSS3, Sequelize,
-                  PostgreSQL y Jest
+                Javascript, Typescript, Node.js, Express.js, Sequelize, Apollo GraphQL, PostgreSQL, React, Redux, Next.js, HTML5, CSS3, Styled Components, TailwindCSS y Jest
                 </span>
                 .
               </p>
@@ -130,7 +128,7 @@ export default function Home() {
             screenImg="/images/tddgif.gif"
             title="ToDoList.tdd"
             ref={tddtdl}
-            url="https://tdd-tdl.vercel.app/"
+            url="https://github.com/sebMar92/ToDoList.tdd"
             description={
               language
                 ? `ToDoList.tdd is the first app I created using Test Driven Development (TDD). For this, I designed unit and integration tests for both the backend and the frontend, and then wrote the code that passes those tests. Since the goal of the project was to learn how to use testing libraries, the visual design is simple and inspired by the terminal interface. The main library used to create the tests is Jest`
@@ -143,7 +141,7 @@ export default function Home() {
             celImg="/images/celtechgif.gif"
             title="TechStore"
             ref={tech}
-            url="https://tech-store-prod.vercel.app/"
+            url="https://github.com/sebMar92/e-commerce-backend"
             description={
               language
                 ? `TechStore is an e-commerce carried out in a group, under the SCRUM work methodology. In addition to the essential functions for searching and buying products, both users with and without a registered account can use the shopping cart and wishlist, it has its own login system and an extensive administration panel. It has integration with Google Auth as a sign up / log in alternative and with MercadoPago to handle payments. The main technologies used were Javascript, Node, Express, React, Redux and TailwindCSS`
@@ -155,7 +153,7 @@ export default function Home() {
             screenImg="/images/dogsgif.gif"
             title="Dogs App"
             ref={dogs}
-            url="https://dogs-app-pi.vercel.app/"
+            url="https://github.com/sebMar92/Henry-PI-Dogs"
             description={
               language
                 ? 'Dogs App is a SPA that receives information from an external API and displays it as a catalog. It also has its own database for the creation of dog breeds by users, and allows their filtering and ordering. Javascript, Node, Express, React, Redux and CSS were used to make it'
@@ -219,7 +217,7 @@ export default function Home() {
             <h2 className="tags">{'</p>'}</h2>
             <div id="icons-container">
               <a
-                href="https://www.linkedin.com/in/sebastian-martinez-developer/"
+                href={`https://www.linkedin.com/in/sebastian-martinez-developer${language ? "/?locale=en_US" : "/"}`}
                 target="_blank"
                 rel="noreferrer"
               >
